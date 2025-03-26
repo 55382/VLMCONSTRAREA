@@ -2,8 +2,8 @@ import cv2  # OpenCV for video processing
 import numpy as np  # NumPy for numerical operations
 
 # Define Areas of Interest (ROI) as polygons (list of points)
-area = [(458, 130), (263, 399), (843, 458), (786, 185)]  # First region "area"
-area1 = [(46, 101), (4, 216), (237, 225), (231, 115)]  # Second region "area1"
+area = [(458, 130), (263, 399), (843, 458), (786, 185)]  # First region "area" detected with polygone zone
+area1 = [(46, 101), (4, 216), (237, 225), (231, 115)]  # Second region "area1" detected with polygone zone
 
 def crop_area(frame, polygon):
     """Crops the frame based on the given polygon (ROI)."""
